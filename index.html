@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catcademy</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </head>
+  <body class="w-100">
+    <!-- Navbar -->
+    <!-- this is so we can make it responsive -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">Catcademy</a>
+
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navmenu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Learning Journey</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Nyaa?</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section>
+      <div class="bg-dark">
+        <div class="container py-4 px-5 px-sm-2 d-flex align-items-center text-center text-sm-start">
+          <div class="col-sm-8 text-white">
+            <h1>Become a <span class="text-warning"> Cat </span></h1>
+            <p>
+              Nap all day cat dog hate mouse eat string barf pillow no baths
+              hate everything but kitty poochy. Sleep on keyboard toy mouse
+              squeak roll over.
+            </p>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+              class="btn btn-primary"
+            >
+              Start The Enrollment
+            </button>
+          </div>
+          <img
+            src="img/sushi.png"
+            alt=""
+            class="col-sm-4 d-none d-sm-block"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section>
+      <div class="container-fluid bg-warning">
+        <div class="p-5 row">
+          <h3 class="col-sm text-white text-center text-sm-start">Sign Up For Our Mewsletter</h3>
+
+          <div class="col-sm input-group">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button type="button" class="btn btn-dark input-group-text">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <section id="learn">
+      <div class="container">
+        <div class="py-3 row align-items-center">
+          <div class="col-12 col-sm py-4 py-sm-1">
+            <img class="img-fluid" src="img/cat.png" alt="" />
+          </div>
+          <div class="col-12 col-sm px-5 py-4 py-sm-1">
+            <h2>Sleep 18 Hours</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique deleniti possimus magnam corporis ratione facere!
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              reiciendis eius autem eveniet mollitia, at asperiores suscipit
+              quae similique laboriosam iste minus placeat odit velit quos,
+              nulla architecto amet voluptates?
+            </p>
+            <a href="#" class="btn btn-light fw-bold">
+              <i></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="bg-dark">
+      <div class="container">
+        <div class="p-5 row align-items-center text-white">
+          <div class="col-12 col-sm px-4 py-4 py-sm-1">
+            <h2>Meow All Night</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique deleniti possimus magnam corporis ratione facere!
+            </p>
+            <p> 
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              reiciendis eius autem eveniet mollitia, at asperiores suscipit
+              quae similique laboriosam iste minus placeat odit velit quos,
+              nulla architecto amet voluptates?
+            </p>
+            <a href="#" class="btn btn-light fw-bold">
+              <i></i> Read More
+            </a>
+          </div>
+          <div class="col-12 col-sm px-5 py-4 py-sm-1">
+            <img class="img-fluid" src="img/fish.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions">
+      <div class="p-5">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <div id="questions" class="accordion accordion-flush">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+                class="accordion-button"
+              >
+                Where exactly are you located?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Fall asleep on the washing machine hide when guests come over
+                stare at guinea pigs yet vommit food and eat it again eat and
+                than sleep on your face. Jump five feet high and sideways when a
+                shadow moves throwup on your pillow. Missing until dinner time.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+                class="accordion-button"
+              >
+                What are the activities?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Scream at teh bath. My left donut is missing, as is my right the
+                dog smells bad and loves cheeseburgers, refuse to drink water
+                except out of someone’s glass. Flee in terror at cucumber
+                discovered on floor sleep nap or gnaw the corn cob give me
+                attention or face the wrath of my claws
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+                class="accordion-button"
+              >
+                What do I need to Know?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Be fabulous for the rest of the day – checked so poop on
+                grasses, but refuse to leave cardboard box and small kitty warm
+                kitty little balls of fur so walk on car leaving trail of paw
+                prints on hood and windshield eat the fat cats food.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructors">
+      <div class="bg-warning pt-5 pb-2 text-center text-white">
+        <h2>Our Instructors</h2>
+        <p class="px-5">
+          Our instructors all have 5+ years pooping on grasses while licking
+          paws
+        </p>
+        <div class="d-lg-flex mx-5 gap-4 text-black">
+          <div class="py-3 px-5 bg-white rounded my-5">
+            <div>
+              <div>
+                <img class="rounded-circle" src="img/kitty-1.png" alt="" />
+                <h3>Tuna</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i>twitter icon goes here</i></a>
+                <a href="#"><i>facebook icon goes here</i></a>
+                <a href="#"><i>linkedin icon goes here</i></a>
+                <a href="#"><i>instagram icon goes here</i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-3 px-5 bg-white rounded my-5">
+            <div>
+              <div>
+                <img class="rounded-circle" src="img/kitty-2.png" alt="" />
+                <h3>Koshka</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i>twitter icon goes here</i></a>
+                <a href="#"><i>facebook icon goes here</i></a>
+                <a href="#"><i>linkedin icon goes here</i></a>
+                <a href="#"><i>instagram icon goes here</i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-3 px-5 bg-white rounded my-5">
+            <div>
+              <div>
+                <img class="rounded-circle" src="img/kitty-3.png" alt="" />
+                <h3>Meo</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i>twitter icon goes here</i></a>
+                <a href="#"><i>facebook icon goes here</i></a>
+                <a href="#"><i>linkedin icon goes here</i></a>
+                <a href="#"><i>instagram icon goes here</i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-3 px-5 bg-white rounded my-5">
+            <div>
+              <div>
+                <img class="rounded-circle" src="img/kitty-4.png" alt="" />
+                <h3>Ziggy</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i>twitter icon goes here</i></a>
+                <a href="#"><i>facebook icon goes here</i></a>
+                <a href="#"><i>linkedin icon goes here</i></a>
+                <a href="#"><i>instagram icon goes here</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section>
+      <div class="container">
+        <div class="row p-5">
+          <div class="col-12 col-sm">
+            <h2 class="text-center">Contact Info</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> Danboru
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Phone:</span> (333) 333-3333
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span>
+                purr@rubmybelly.gg
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Email:</span>
+                i.dare.you2@rubmybelly.gg
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer ca>
+      <div class="containter p-4 text-center bg-dark text-white">
+        <p>Copyright &copy; 2021 Catcademy</p>
+
+        <a href="#">
+          <i></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      L.mapbox.accessToken =
+        'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+      var map = L.mapbox
+        .map('map')
+        .setView([33.7362, 132.4818], 14)
+        .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'))
+    </script>
+  </body>
+</html>
